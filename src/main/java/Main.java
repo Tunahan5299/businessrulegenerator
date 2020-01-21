@@ -2,11 +2,15 @@ import java.sql.SQLException;
 
 public class Main{
     public static void main(String[] args) throws SQLException {
-        BusinessRuleOracleDaoImpl brdao = new BusinessRuleOracleDaoImpl();
+//        BusinessRuleOracleDaoImpl brdao = new BusinessRuleOracleDaoImpl();
+//
+//        BusinessRule br1 = new BusinessRule("Rule1", "CompareRule", "Vergelijken", "Kan niet vergelijken", 0);
+//
+//        brdao.save(br1);
 
-        BusinessRule br1 = new BusinessRule("Rule1", "CompareRule", "Vergelijken", "Kan niet vergelijken", 0);
+        BusinessRuleApexDaoImpl brdao = new BusinessRuleApexDaoImpl();
 
-        brdao.save(br1);
+        brdao.findAll();
 
     }
 }
