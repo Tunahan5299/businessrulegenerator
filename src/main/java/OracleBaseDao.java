@@ -25,7 +25,7 @@ public class OracleBaseDao {
     public static void main(String[] args) {
         Connection conn = null;
         try {
-            Class.forName("oracle.jdbc.OracleDriver");
+            Class.forName("oracle.jdbc.driver.OracleDriver");
             System.out.println("Connecting to database...");
             conn = DriverManager.getConnection(DB_URL,DB_USER,DB_PASS);
         } catch (Exception e) {
