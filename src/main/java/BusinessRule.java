@@ -12,4 +12,44 @@ public class BusinessRule {
         this.foutmelding = foutmelding;
         this.status = status;
     }
+
+    public String getNaam() {
+        return naam;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getOmschrijving() {
+        return omschrijving;
+    }
+
+    public String getFoutmelding() {
+        return foutmelding;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setNaam(String naam) {
+        this.naam = naam;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setOmschrijving(String omschrijving) {
+        this.omschrijving = omschrijving;
+    }
+
+    public void setFoutmelding(String foutmelding) {
+        this.foutmelding = foutmelding;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
 }
