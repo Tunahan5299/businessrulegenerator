@@ -1,7 +1,7 @@
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class BusinessRuleOracleDaoImpl extends OracleBaseDao implements BusinessRuleDao {
+public class BusinessRuleOracleDaoImpl extends OracleBaseDao implements BusinessRuleOracleDao {
 
     public BusinessRuleOracleDaoImpl() throws SQLException {
         super();
