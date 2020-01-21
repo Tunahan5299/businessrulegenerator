@@ -9,12 +9,31 @@ public class BusinessRuleOracleDaoImpl extends OracleBaseDao implements Business
 
     public BusinessRule save(BusinessRule b) {
         try {
-            PreparedStatement pstmnt = conn.prepareStatement("INSERT INTO businessrule (type) VALUES (?)");
-            pstmnt.setInt(1, k.getKaartNummer());
-            pstmnt.setDate(2, k.getGeldigTot());
-            pstmnt.setInt(3, k.getKlasse());
-            pstmnt.setFloat(4, k.getSaldo());
-            pstmnt.setInt(5, k.getEigenaar().getReizigerID());
+            PreparedStatement pstmnt = conn.prepareStatement("INSERT INTO businessrule (naam, type, omschrijving, foutmelding, status) VALUES (?, ?, ?, ?, ?)");
+            pstmnt.setString(1, b.getNaam());
+            pstmnt.setString(2, b.getType());
+            pstmnt.setString(3, b.getOmschrijving());
+            pstmnt.setString(4, b.getFoutmelding());
+            pstmnt.setInt(5, b.getStatus());
+
+            pstmnt.executeUpdate();
+
+            pstmnt.close();
+        } catch (SQLException sqlex) {
+            System.out.println("SQLException: " + sqlex.getMessage());
+        }
+
+        return b;
+    }
+
+    public BusinessRule update(BusinessRule b) {
+        try {
+            PreparedStatement pstmnt = conn.prepareStatement("UPDATE businessrule SET naam = ?, type = ?, omschrijving = ?, foutmelding = ?, status = ? WHERE naam = ?");
+            pstmnt.setString(1, b.getNaam());
+            pstmnt.setString(2, b.getType());
+            pstmnt.setString(3, b.getOmschrijving());
+            pstmnt.setString(4, b.getFoutmelding());
+            pstmnt.setInt(5, b.getStatus());
 
             pstmnt.executeUpdate();
 
@@ -24,6 +43,22 @@ public class BusinessRuleOracleDaoImpl extends OracleBaseDao implements Business
             System.out.println("SQLException: " + sqlex.getMessage());
         }
 
-        return k;
+        return b;
+    }
+
+    public boolean delete(BusinessRule b) {
+        try {
+            PreparedStatement pstmnt = conn.prepareStatement("DELETE FROM businessrule WHERE naam = ?");
+            pstmnt.setString(1, b.getNaam());
+            pstmnt.executeUpdate();
+
+
+            return true;
+        } catch (SQLException sqlex) {
+            System.out.println("SQLException: " + sqlex.getMessage());
+        }
+
+        return false;
     }
 }
+

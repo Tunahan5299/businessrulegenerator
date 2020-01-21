@@ -17,7 +17,7 @@ public class AttributeRangeRuleStrategy implements BusinessruleGenerationStrateg
         String endRange = jsonObject1.getString("endRange");
         boolean isDate = jsonObject1.getBoolean("isDate");
 
-        RuleType attrRangeRule = new AttributeRangeRule(table, operator, column, startRange, endRange, isDate);
-        return attrRangeRule;
+        RuleType atteRangeRule = new AttributeRangeRule(table, operator, column, startRange, endRange, isDate);
+        return atteRangeRule;
     }
 }
