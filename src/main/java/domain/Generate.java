@@ -1,4 +1,4 @@
-package domain;
+/*package domain;
 
 import java.util.Map;
 import javax.json.JsonArray;
@@ -19,4 +19,4 @@ public class jood(){
         "END {name}";
 private String
 
-        }
+        }*/

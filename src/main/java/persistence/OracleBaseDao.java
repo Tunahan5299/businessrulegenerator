@@ -1,11 +1,13 @@
+package persistence;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class OracleBaseDao {
-    private static final String DB_URL = "jdbc:oracle:thin:@localhost:1521/xepdb1";
-    private static final String DB_USER = "TUNAHAN";
-    private static final String DB_PASS = "admin";
+    private static final String DB_URL = "jdbc:oracle:thin:@//ondora04.hu.nl:8521/educ09";
+    private static final String DB_USER = "stud1741106";
+    private static final String DB_PASS = "stud1741106";
     protected static Connection conn;
 
     public OracleBaseDao() throws SQLException {

@@ -1,8 +1,11 @@
+package persistence;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class ApexBaseDao {
+public class
+ApexBaseDao {
     private static final String DB_URL = "jdbc:oracle:thin:@//ondora04.hu.nl:8521/educ09";
     private static final String DB_USER = "stud1740016";
     private static final String DB_PASS = "stud1740016";

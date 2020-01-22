@@ -1,4 +1,4 @@
-package domain;
+/*package domain;
 
 import javax.json.JsonArray;
 import javax.json.JsonObject;
@@ -21,3 +21,4 @@ public class AttributeRangeRuleStrategy implements BusinessruleGenerationStrateg
         return atteRangeRule;
     }
 }
+*/

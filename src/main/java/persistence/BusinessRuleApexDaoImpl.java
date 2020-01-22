@@ -1,11 +1,16 @@
-import java.sql.Connection;
+package persistence;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BusinessRuleApexDaoImpl extends ApexBaseDao implements BusinessRuleApexDao{
+import domain.BusinessRule;
+import persistence.ApexBaseDao;
+import persistence.BusinessRuleApexDao;
+
+public class BusinessRuleApexDaoImpl extends ApexBaseDao implements BusinessRuleApexDao {
 
     public BusinessRuleApexDaoImpl() throws SQLException {
         super();

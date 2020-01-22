@@ -1,4 +1,8 @@
+package persistence;
+
 import java.util.ArrayList;
+
+import domain.BusinessRule;
 
 public interface BusinessRuleOracleDao {
 
