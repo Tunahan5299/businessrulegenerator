@@ -11,7 +11,6 @@ public class Main{
 //        brdao.save(br1);
 
         BusinessRuleApexDaoImpl brdao = new BusinessRuleApexDaoImpl();
-
         brdao.findAll();
 
     }

@@ -1,8 +1,3 @@
-/*
-
-VOORBEELD
-
-
 package domain;
 
 import javax.json.JsonArray;
@@ -10,7 +5,7 @@ import javax.json.JsonObject;
 
 import domain.*;
 
-public class AttributeRangeRuleStrategy implements BusinessruleGenerationStrategy{
+public class CompareTupleRuleType implements BSRRuleType{
     @Override
     public RuleType create(JsonObject jsonObject){
         JsonArray jsonarray = jsonObject.getJson.getJsonArray("values");

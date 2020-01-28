@@ -1,19 +1,10 @@
 package domain;
 
-import java.util.List;
-import java.sql.SQLException;
+import domain.BusinessRule;
 
-import persistence.BusinessRuleApexDao;
-import persistence.BusinessRuleApexDaoImpl;
-
+import java.sql.ResultSet;
 
 public class BusinessRuleService{
-    /*BusinessRuleApexDao businessRuleApexDao = new BusinessRuleApexDaoImpl();
-
-    public List<BusinessRule> getAllBusinessRules(){
-        return BusinessRuleApexDao.findAll();
-    }
-
     private static BusinessRuleService uniqueInstance;
 
     private BusinessRuleService(){}
@@ -24,14 +15,15 @@ public class BusinessRuleService{
         }
     }
 
-    public void CreateBusinessRuleUsingStrategy(businessRule bsr, BusinessRuleGenerationStrategy strategy, ){
+    public static void CreateBusinessRule(BusinessRule rule, BSRRuleType strategy, ResultSet rs){
+        System.out.println("Create Business Rule Niffo!");
         bsr.assignType(strategy.create(jsonObject));
         bsr.Generate();
     }
 
-   public boolean DeleteBusinessRule(){
+    public boolean DeleteBusinessRule(){
         return true;
-    }*/
+    }
 
 
 }

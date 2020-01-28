@@ -15,6 +15,9 @@ public class BusinessRule {
         this.status = status;
     }
 
+    public BusinessRule(int bsrId, String bsrName) {
+    }
+
     public String getNaam() {
         return naam;
     }
@@ -54,6 +57,7 @@ public class BusinessRule {
     public void setStatus(int status) {
         this.status = status;
     }
+
 }
 //package domain;
 //
