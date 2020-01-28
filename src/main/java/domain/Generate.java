@@ -11,7 +11,7 @@ public class jood(){
         "WHEN {column} {operator} {start_range} AND {end_range}\n" +
         "DECLARE \n" +
         "  rule xcep EXCEPTION \n" +
-        "BEGIN \n" +
+        "BEGIN  \n" +
         "  rule xcep EXCEPTION \n" +
         "EXCEPTION\n" +
         "  WHEN RULE XCEP THEN\n" +
