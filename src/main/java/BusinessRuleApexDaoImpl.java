@@ -1,4 +1,3 @@
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -39,4 +38,5 @@ public class BusinessRuleApexDaoImpl extends ApexBaseDao implements BusinessRule
         return selectBusinessRule(
                 "SELECT * FROM businessrule");
     }
+
 }

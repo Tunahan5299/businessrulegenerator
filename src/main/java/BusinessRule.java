@@ -1,4 +1,6 @@
-public class BusinessRule {
+import java.util.ArrayList;
+
+public class BusinessRule{
     private String naam;
     private String type;
     private String omschrijving;
@@ -51,5 +53,10 @@ public class BusinessRule {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public String toString() {
+        String sBusinessRule = "[" + this.getClass().getSimpleName() + "] {" + naam + ", " + type + ", " + omschrijving + ", " + foutmelding + ", " + status + "}";
+        return sBusinessRule;
     }
 }
