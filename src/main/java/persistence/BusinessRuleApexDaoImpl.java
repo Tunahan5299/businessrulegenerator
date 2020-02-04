@@ -1,16 +1,10 @@
-package persistence;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import domain.BusinessRule;
-import persistence.ApexBaseDao;
-import persistence.BusinessRuleApexDao;
-
-public class BusinessRuleApexDaoImpl extends ApexBaseDao implements BusinessRuleApexDao {
+public class BusinessRuleApexDaoImpl extends ApexBaseDao implements BusinessRuleApexDao{
 
     public BusinessRuleApexDaoImpl() throws SQLException {
         super();
@@ -44,4 +38,5 @@ public class BusinessRuleApexDaoImpl extends ApexBaseDao implements BusinessRule
         return selectBusinessRule(
                 "SELECT * FROM businessrule");
     }
+
 }
